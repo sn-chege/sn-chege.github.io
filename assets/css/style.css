@@ -1,0 +1,168 @@
+
+@import url('tablet.css');
+@import url('mobile.css');
+@import url('desktop.css');
+
+/*
+<link href="assets/css/desktop.css" rel="stylesheet" />
+<link href="assets/css/tablet.css" rel="stylesheet" />
+<link href="assets/css/mobile.css" rel="stylesheet" />
+*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #FFD900;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    min-width: 320px;
+    max-width: 1400px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color:black;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color: black;
+}
+
+/*=========START THEME =========*/
+@font-face {
+    font-family: script;
+    src: url('../fonts/ScriptMTBold.ttf');
+}
+@font-face {
+    font-family: celest;
+    src: url('../fonts/Celestia.otf');
+}
+@font-face {
+    font-family: jura;
+    src: url('../fonts/Jura-Light.ttf');
+}
+@font-face {
+    font-family: rainydays;
+    src: url('../fonts/RAINYDAYS.ttf');
+}
+@font-face {
+    font-family: sfcollegiate;
+    src: url('../fonts/SFCollegiate.ttf');
+}
+@font-face {
+    font-family: xtrusion;
+    src: url('../fonts/xtrusion.ttf');
+}
+
+.font-celest {
+    font-family: celest;
+}
+
+.font-script {
+    font-family: script;
+}
+.font-jura {
+    font-family: jura;
+}
+
+.font-rainydays {
+    font-family: rainydays;
+}
+.font-xtrusion {
+    font-family: xtrusion;
+}
+.font-sfcollegiate {
+    font-family: sfcollegiate;
+}
+
+
+.light-text {
+    font-weight: 65px;
+}
+/*=========END THEME =========*/
+
+
+
+.small-text {
+    font-size: 13px;
+}
+.medium-text{
+    font-size: 15px;
+}
+.bg-light{
+    background-color: white;
+}
+.bg-dark{
+    background-color: black;
+}
+
+/*==========END THEME========*/
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #FFD900;
+    height: 100%;
+}
+
+.hamburger p{
+    margin: 0;
+    text-align: center;
+}
+
+.social ul li {
+    padding: 5px;
+    text-align: center;
+} 
+
+.menu li {
+    display: inline;
+}
+
+.menu-item a {
+    font-family: rainydays;
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: 60;
+    color: black;
+}
+
+.menu .active a {
+  color: white;
+}
+
+.menu-item a:hover {
+    color: white;
+}
+
+.main-area{
+    width: 100%;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/***************************/
+.borders{
+        border: 1px solid black;
+}

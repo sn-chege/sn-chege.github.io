@@ -1,0 +1,224 @@
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    /*===============================START LANDING AREA==================*/
+
+    .landing{
+        
+    }
+    
+    .left-bar{
+        padding-top: 5px;
+        width: 80px;
+    }
+    .hamburger img{
+        width:40px;
+        height:40px;
+    }
+
+    .social ul li a{
+        font-size: 25px;
+    }
+
+    .social{
+        margin-top: 20px;
+    }
+
+    .social ul li {
+        margin:5px ;
+    }
+
+    .top-bar{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .top-bar .nav-menu{
+        display: none;
+    }
+    .top-bar .link-to-gfx{
+        display: none;
+    }
+    .top-bar .top-title h3{
+        font-size: 70px;
+    }
+   
+   
+    .page-intro-area{
+        /*box-shadow: inset 1px -3px 6px 0px black;*/
+        margin: 6px 50px 15px 4px;
+        box-shadow: inset 0px 0px 20px 0px black;
+        padding: 10px 10px 30px 27px;
+    }
+
+    .page-intro-area .intro-text h1{
+        font-size: 100px;
+        text-align: center;
+    }
+    .page-intro-area .intro-text h5{
+        padding: 10px 0 0 0;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .page-intro-area .centered .logo{
+        text-align: center
+    }
+    
+    .page-intro-area .select-mix-categories{
+        margin-top: 10px;
+    }
+    .page-intro-area .select-mix-categories select{
+        text-transform: uppercase;
+        width: 250px;
+        margin: auto;
+        background: transparent;
+        color: black;
+        border-radius: 0;
+        border: 0.5px solid black; 
+        box-shadow: 4px 4px 0px black;       
+    }
+    .page-intro-area .select-mix-categories option{
+        font-family: jura;
+        color: white;
+        background-color: black;
+        height:20px;
+    }
+    
+
+
+        /*=================================END LANDING AREA==================*/
+
+    /*=================================START MIX CATEGORY SECTION==================*/
+        
+        .mix-category .section-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .mix-category .section-header .category-title h5{
+            text-transform: uppercase;
+            padding: 8px 18px;
+            color: white;
+            background-color: black;
+            color: white;
+            margin:0;
+        }
+        .mix-category .section-header .slide-tip p{
+            padding: 0;
+            margin: 0;
+        }
+        .mix-category .section-body{
+            padding: 0px 0px;
+            border-top: 1px solid black;
+        }
+        
+        
+        .swiper-container {
+            padding: 0px 0px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            width: 250px;
+            height: 300px;
+            margin: 20px;
+        }
+
+        .single-mix {
+            width: 100%;
+            height: 100%;
+            padding: ;
+            position: relative;
+            transition: .6s ease-out;
+            box-shadow: 0 10px 10px rgb(0, 0, 0, 0.5);
+        }
+
+        .single-mix:hover {
+            transform: translateY(-15px);
+        }
+
+        .single-mix:hover:before {
+            opacity: 1;
+        }
+
+        .single-mix:hover .mix-options {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        .single-mix:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #000, transparent);
+            z-index: 2;
+            transition: 0.2s;
+            opacity: 0;
+        }
+
+        .single-mix img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+
+        .single-mix .mix-options {
+            position: absolute;
+            bottom: 60px;
+            z-index: 3;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(60px);
+            transition: 0.5s;
+        }  
+        
+        .slider-nav-arrows {
+            display: none;
+            padding: 8px 20px;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+
+        .arrow {
+            margin-top: -5px;
+            height: 25px;
+            width: 100px;
+            background-image: url('../images/arrow2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .arrow-right {
+            background-image: url('../images/arrow2.png');
+            background-position: right;
+        }
+
+        .arrow-left {
+            background-image: url('../images/arrow4.png');
+            background-position: left;
+        }
+        .section-dark .arrow-right {
+            background-image: url('../images/arrow2-light.png');
+            background-position: right;
+        }
+
+        .section-dark .arrow-left {
+            background-image: url('../images/arrow4-light.png');
+            background-position: left;
+        }
+         .section-dark .slider-nav-arrows{
+             color: white;
+         }
+
+
+
+         /*=================================END MIX CATEGORY SECTION==================*/
+
+}
