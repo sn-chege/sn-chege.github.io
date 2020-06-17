@@ -1,20 +1,34 @@
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 461px) and (max-width: 600px){
     /*===============================START LANDING AREA==================*/
     .landing{
-    
+        display: flex;
+        margin-top: 65px;
     }
+    .mainn{
+        display: flex;
+    }
+
     
     .left-bar{
         padding-top: 5px;
         width: 70px;
-
     }
     
     .hamburger img{
         width:30px;
         height:30px;
     }
+    .hamburger{
+        padding-left: 10px;
+        padding-top: 4px;
+    }
+    .hamburger p{
 
+    }
+
+    .hamburger .label-menu{
+
+    }
     .social ul li a{
         font-size: 20px;
     }
@@ -27,21 +41,28 @@
         margin:5px ;
     }
 
-    .top-bar{
-        display: flex;
-        justify-content: center;
-        height: 60;
-    }
+   .top-bar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background: #FFD900;
+    z-index: 999;
+}
 
-    .top-bar .nav-menu{
+    .top-bar .nav-menu .menu{
         display: none;
     }
-
-    .top-bar .top-title h3{
-        font-size: 50px;
+    
+    .top-bar .top-title{
+        width: 100%;
     }
 
-
+    .top-bar .top-title h3 {
+        text-align: center;
+        font-size: 50px;
+    }
     .top-bar .link-to-gfx{
         display: none;
     }
@@ -49,6 +70,7 @@
     
 
     .page-intro-area{
+        width: 100%;
         text-shadow: 0 0 black;
         box-shadow: inset 1px -3px 6px 0px black;
         border-bottom: none;
@@ -103,27 +125,37 @@
 
     /*=================================END LANDING AREA==================*/
 /*=================================START MIX CATEGORY SECTION==================*/
-        
+        .mix-category{
+             margin-top: 40px;
+         }
         .mix-category .section-header{
-            display: flex;
-            justify-content: space-between;
+            background-color: black;
+            width: 100%;
         }
         .mix-category .section-header .category-title h5{
             text-transform: uppercase;
-            padding: 8px 18px;
+            padding: 14px 0;
             color: white;
-            background-color: black;
+            text-align: center;
             color: white;
             margin:0;
+            width: 100%
         }
         .mix-category .section-header .slide-tip p{
-            display: none;
             padding: 0;
             margin: 0;
         }
-        .mix-category .section-body{
-            padding: 0px 0px;
-            border-top: 1px solid black;
+        .mix-category .section-body {
+            margin: 2px 10px;
+            border: 1px solid black;
+            border-top: none;
+            padding: 10px 10px;
+            box-shadow: 0 0 5px 1px black;
+        }
+        .mix-category .section-body .slide-tip p {
+            text-align: center;
+            padding: 0;
+            margin: 0;
         }
         
         
@@ -147,7 +179,12 @@
             transition: .6s ease-out;
             box-shadow: 0 10px 10px rgb(0, 0, 0, 0.5);
         }
-
+        .single-mix .mix-options .mix-title h4{
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                font-family: jura;
+        }
         .single-mix:hover {
             transform: translateY(-15px);
         }
@@ -194,8 +231,27 @@
             transition: 0.5s;
         }  
         
+    .btn-rounded{
+         border-radius: 25px;
+    }
+   
+    .btn-mix-custom{
+        margin-bottom:10px;
+        width: 200px;
+        padding: 4px 10px;
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+    }
+
+    .btn-mix-custom:hover{
+        transition: .7s;
+        border: 1px solid white;
+        color: black;
+        background-color: white;
+    }   
+
         .slider-nav-arrows {
-            display: none;
             padding: 8px 20px;
             justify-content: space-between;
             flex-wrap: nowrap;

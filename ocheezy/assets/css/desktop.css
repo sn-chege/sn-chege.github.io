@@ -2,9 +2,20 @@
     /*===============================START LANDING AREA==================*/
 
     .landing{
+        display: flex;
+        margin-top: 105px;
+    }
 
-    } 
-    
+
+
+
+
+    .mainn{display: flex;}
+
+
+
+
+
     .left-bar{
         padding-top: 5px;
         width: 115px;
@@ -30,11 +41,24 @@
     .top-bar{
         height: 95px;
         display: flex;
-        justify-content: space-around;
+       
+        justify-content: space-between;
+    }
+    .top-bar {
+        padding: 0px 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        background: #FFD900;
+        z-index: 999;
     }
     
     .top-bar .nav-menu .menu{
         margin:30px 0px;
+        padding-left: 45px;
     }
 
     .top-bar .link-to-gfx{
@@ -55,6 +79,7 @@
         margin: 6px 50px 15px 4px;
         box-shadow: inset 0px 0px 20px 0px black;
         padding: 10px 10px 30px 27px;
+        width: 100%;
     }
 
     .page-intro-area .intro-text h1{
@@ -97,17 +122,22 @@
 
     .section-padded {
         border-top: none;
-        margin: 0 50px 0 104px;
+        margin: 20px 50px 0 104px;
         margin-bottom: 150px;
+    }
+
+    .category-title {
+        width: 100%;
     }
 
     /*=================================START MIX CATEGORY SECTION==================*/
     
     .mix-category .section-header{
-        display: flex;
-        justify-content: space-between;
+        
+        
     }
     .mix-category .section-header .category-title h5{
+        display: inline;
         text-transform: uppercase;
         padding: 8px 18px;
         color: white;
@@ -115,11 +145,11 @@
         color: white;
         margin:0;
     }
-    .mix-category .section-header .slide-tip p{
-        padding: 0;
-        margin: 0;
-        display: none;
-    }
+     .mix-category .section-body .slide-tip p{ 
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
     .mix-category .section-body{
         padding: 0px 0px;
         border: 1px solid black;
@@ -186,7 +216,7 @@
 
     .single-mix .mix-options {
         position: absolute;
-        bottom: 60px;
+        bottom: 10px;
         z-index: 3;
         color: #fff;
         opacity: 0;
@@ -194,8 +224,35 @@
         transition: 0.5s;
     }  
     
+    .btn-rounded{
+         border-radius: 25px;
+    }
+   
+    .btn-mix-custom{
+        margin-bottom:10px;
+        width: 200px;
+        padding: 4px 10px;
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+    }
+
+    .btn-mix-custom:hover{
+        transition: .7s;
+        border: 1px solid white;
+        color: black;
+        background-color: white;
+    }   
+
+
+    .single-mix .mix-options .mix-title h4{
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: jura;
+    }
+    
     .slider-nav-arrows {
-        display: none;
         padding: 8px 20px;
         justify-content: space-between;
         flex-wrap: nowrap;

@@ -1,7 +1,12 @@
 
 @import url('tablet.css');
 @import url('mobile.css');
+@import url('small-screen.css');
 @import url('desktop.css');
+
+
+
+
 
 /*
 <link href="assets/css/desktop.css" rel="stylesheet" />
@@ -41,6 +46,9 @@ a, a:hover{
 }
 h1,h2,h3,h4,h5,h6,p{
     color: black;
+}
+p{
+    margin-bottom: 0 ;
 }
 
 /*=========START THEME =========*/
@@ -166,3 +174,6 @@ h1,h2,h3,h4,h5,h6,p{
 .borders{
         border: 1px solid black;
 }
+
+
+

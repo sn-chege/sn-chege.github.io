@@ -1,72 +1,122 @@
-@media only screen and (min-width: 601px) and (max-width: 992px) {
+@media only screen and (min-width: 320px) and (max-width: 460px){
     /*===============================START LANDING AREA==================*/
-
     .landing{
-        
+        margin-top: 60px;
     }
     
-    .left-bar{
-        padding-top: 5px;
-        width: 80px;
-    }
-    .hamburger img{
-        width:40px;
-        height:40px;
-    }
+    .left-bar{     
 
+    }
+    
+   
+   
+    .social ul{
+
+    }
     .social ul li a{
-        font-size: 25px;
+        font-size: 20px;
     }
-
+    
     .social{
-        margin-top: 20px;
+        display: none;
+        margin-top: 0;
+        text-align: right;
+        padding-right: 40px;
     }
-
+    
     .social ul li {
         margin:5px ;
+        display: inline;
     }
 
+   
     .top-bar{
-        height: 80px;
         display: flex;
         justify-content: center;
+        border-bottom: 1px solid black;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        background: #FFD900;
+        z-index: 999;
+    }
+   
+    .top-bar .nav-menu{
+      display:flex;  
     }
 
-    .top-bar .nav-menu{
+    .top-bar .nav-menu .menu{
         display: none;
     }
+
+    .top-bar .top-title{
+        width: 100%;
+    }
+
+    .top-bar .top-title h3{
+        font-size: 45px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .top-bar .top-title h6{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .hamburger img{
+        width:30px;
+        height:30px;
+    }
+
+    .hamburger{
+        padding-left: 10px;
+        padding-top: 4px;
+    }
+    .hamburger p{
+
+    }
+
+    .hamburger .label-menu{
+
+    }
+
+
+
     .top-bar .link-to-gfx{
         display: none;
     }
-    .top-bar .top-title h3{
-        font-size: 70px;
-    }
-   
-   
+
+
     .page-intro-area{
-        /*box-shadow: inset 1px -3px 6px 0px black;*/
-        margin: 6px 50px 15px 4px;
-        box-shadow: inset 0px 0px 20px 0px black;
-        padding: 10px 10px 30px 27px;
+        text-shadow: 0 0 black;
+        box-shadow: inset 0px 0px 20px 3px black;
+        padding: 35px;
     }
 
     .page-intro-area .intro-text h1{
-        font-size: 100px;
+        font-size: 70px;
         text-align: center;
+        margin-top: -10px;
     }
     .page-intro-area .intro-text h5{
         padding: 10px 0 0 0;
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
     }
     
     .page-intro-area .centered .logo{
         text-align: center
     }
+      .page-intro-area .logo img{
+          width: 150px; height: 150px;
+      }
     
     .page-intro-area .select-mix-categories{
         margin-top: 10px;
     }
+
     .page-intro-area .select-mix-categories select{
         text-transform: uppercase;
         width: 250px;
@@ -74,8 +124,8 @@
         background: transparent;
         color: black;
         border-radius: 0;
-        border: 0.5px solid black; 
-        box-shadow: 4px 4px 0px black;       
+        border: 1px solid black;
+        box-shadow: 4px 4px 0px black;        
     }
     .page-intro-area .select-mix-categories option{
         font-family: jura;
@@ -83,33 +133,47 @@
         background-color: black;
         height:20px;
     }
-    
 
+    /*---------------------START Mobile Menu---------------------*/
+    .nav-menu{
+        display: none;
+    }
+    /*---------------------END Mobile Menu---------------------*/
 
-        /*=================================END LANDING AREA==================*/
-
-    /*=================================START MIX CATEGORY SECTION==================*/
-        
+    /*=================================END LANDING AREA==================*/
+/*=================================START MIX CATEGORY SECTION==================*/
+        .mix-category{
+             margin-top: 40px;
+             margin-bottom: 100px;
+         }
         .mix-category .section-header{
-            display: flex;
-            justify-content: space-between;
+            width: 100%;
+           
+          
         }
         .mix-category .section-header .category-title h5{
+            width: 100%;
+             background-color: black;
             text-transform: uppercase;
-            padding: 8px 18px;
+            padding: 12px 0;
             color: white;
-            background-color: black;
+            text-align: center;
             color: white;
             margin:0;
         }
-        .mix-category .section-header .slide-tip p{
+        .mix-category .section-body .slide-tip p{ 
+            text-align: center;
             padding: 0;
             margin: 0;
         }
-        .mix-category .section-body{
-            padding: 0px 0px;
-            border-top: 1px solid black;
+        .mix-category .section-body {
+            margin: 2px 10px;
+            border: 1px solid black;
+            border-top: none;
+            padding: 10px 10px;
+            box-shadow: 0 0 5px 1px black
         }
+        
         
         
         .swiper-container {
@@ -131,6 +195,13 @@
             position: relative;
             transition: .6s ease-out;
             box-shadow: 0 10px 10px rgb(0, 0, 0, 0.5);
+        }
+
+        .single-mix .mix-options .mix-title h4{
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: jura;
         }
 
         .single-mix:hover {
@@ -178,9 +249,30 @@
             transform: translateY(60px);
             transition: 0.5s;
         }  
+
+        .btn-rounded{
+            border-radius: 25px;
+        }
+    
+        .btn-mix-custom{
+            margin-bottom:10px;
+            width: 200px;
+            padding: 4px 10px;
+            color: white;
+            background: transparent;
+            border: 1px solid white;
+        }
+
+        .btn-mix-custom:hover{
+            transition: .7s;
+            border: 1px solid white;
+            color: black;
+            background-color: white;
+        }   
+
         
         .slider-nav-arrows {
-            display: none;
+            
             padding: 8px 20px;
             justify-content: space-between;
             flex-wrap: nowrap;
@@ -220,5 +312,6 @@
 
 
          /*=================================END MIX CATEGORY SECTION==================*/
+
 
 }
